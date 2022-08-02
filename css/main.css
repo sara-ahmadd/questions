@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(233, 236, 238);
+}
+:root {
+  --main-color: rgba(188, 143, 37, 0.849);
+}
+.container {
+  margin: 30vh auto;
+  width: 700px;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-family: "Dancing Script", cursive;
+  margin: 20px 10px 40px 10px;
+  font-size: 40px;
+  color: var(--main-color);
+}
+.container .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 10px 20px 0px rgb(209, 207, 207);
+  color: rgb(105, 103, 103);
+  letter-spacing: 5px;
+}
+.container .card .butt {
+  padding: 5px;
+  border: 2px solid var(--main-color);
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+.answer {
+  margin-top: 20px;
+  text-align: justify;
+  border-top: 1px solid #333;
+  line-height: 1.5;
+  padding-top: 10px;
+  color: #4eaaf5;
+  letter-spacing: 0;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-back {
+  0% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+}
